@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="D A N I E L S I N G L E  D O T  C O M">
+        <meta name="author" content="Isaac Perkins">
+        <title>d a n i e l  s i n g l e</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link href="assets/lib/fontawesome/css/all.min.css" rel="stylesheet">
+        <link href="assets/lib/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/style.min.css" rel="stylesheet">
+        <script type="importmap">
+            {
+                "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+                }
+            }
+            </script>
+        <script src="assets/lib/email/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init({
+                    publicKey: "mcm1frw5GQLlzItu4",
+                });
+            }
+            )();
+            function spawnHeart() {
+                const heart = document.createElement('div');
+                heart.classList.add('falling-heart');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.textContent = Math.random() > 0.3 ? '🩷' : '🤍';
+                heart.style.animationDuration = (3 + Math.random() * 3) + 's';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 4000);
+            };
+        </script>
+    </head>
+    <body id="page-top">
+        <header>
+            <div class="container-fluid p-0">
+                <img src="assets/img/banner.gif" alt="banner" class="img-fluid">
+            </div>
+            <script>
+                setInterval(spawnHeart, 400);
+            </script>
+        </header>
+        <section id="book">
+            <div class="container-lg"> 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="code code-orange"> S O U R C E C O D E emoji-banner { overflow:0000000000011111111111111000000011101010101000101011001 hidden; white-space:
+                            nowrap; width: 100%; position: relative; } .emoji-banner span { display: 11100000111111000000inline-block; will-change: transform;
+                            animation: scroll-now 20s linear infinite; } @keyframes scroll-now { 0% { transform: translateX(100%); } 100% { transform:
+                            translateX(-100%); } } do not enter - inert enter000000001111111100000011111111 { overflow: hidden; white-space
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-6 flash">
+                        <h2 class="banner-text text-uppercase" >Diary of a naughtie kid</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            A 333-PAGE BEAUTIFUL MESS OF FASHION, MUSIC, MODELS, AND MADNESS FROM THE NOUGHTIES. 2000 - 2010. 
+                            A collection of personal photos in low-res, friends photo's in high-res, stories from the beginnings of tsubi and The Bang Gang, interviews, journal entries, love letters, fan letters, newspaper clippings, flyers, and a special edition of ‘The Fagazine’ filled with Bang Gang mayhem.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="_df_book" id="flipbook" source="/assets/book-preview.pdf"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11 ">
+                        <p class="code text-end">
+                            Csaaaaddf djjee<br>
+                            emoji-banner 000000000011111111 overflow: hidden; white-space: .emoji-banner { overflow: hidden; <br>white-space:
+                            nowrap; width: 100%; position: relative; } .emoji-banner span00001111111{ display: inline-block;000000000011111111 <br>
+                            100% { transform: translateX(-100%); } }
+                        </p>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <section id="buy-afw">
+            <div class="row mt-5">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 text-center">
+                    <h2 class="text text-uppercase flash">EXCLUSIVE AFW PACKAGE - AUD$333</h2>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <ul class="list-group list-group-flush offer">
+                        <li class="list-group-item pl-0">*You + 1 to the book launch at @AFW, May 13, 5pm</li>
+                        <li class="list-group-item">*You + 1 on the guestlist of the Bang Gang BACK IN FASHION party @Club77, May 16</li>
+                        <li class="list-group-item">*Numbered and signed copy of the 'Diary Of A Naughtie Kid' first edition of 1000.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img class="img-fluid mb-4" src="assets/img/afw-offer-lg.png" alt="buy book">
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1RKIDrClUPXndsAJM50NZhpE"
+                        publishable-key="pk_live_klssCA2XhJLxKrwaipnA1MNr"
+                    ></stripe-buy-button>
+                </div>
+            </div>  
+        </section>
+        <section id="buy-book">
+            <div class="row mt-5">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 flash">
+                    <h2 class="banner-text text-uppercase" >‘ DIARY OF A NAUGHTIE KID ’ PRE - ORDER – $99 USD</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center"> 
+                <img class="img-fluid mb-4" src="assets/img/book.png" alt="buy book">
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1RJyFYClUPXndsAJaMUnpNpD"
+                        publishable-key="pk_live_klssCA2XhJLxKrwaipnA1MNr">
+                    </stripe-buy-button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12">
+                    <p class="code text-black text-end">
+                        .emoji-banner { overflow: hidden; white-space: nowrap;<br>
+                    width: 100%; position: relative; } .emoji-banner span { display: inline-block; will-change: transform; animation: scroll-now 20s
+                        linear infinite; } @keyframes scroll-now { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } } will-
+                        change:0000000000111111111100101101100011110 ow { 0% { transform: translateX(100%); } transform; animation:
+                        s11111110000011100001110010100croll-now 20s linear infinite; }
+                        @keyframes scroll-now { 0% { transform: translateX(100%); }
+                        100% { transform: translateX(-100%); } }
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Banggang -->
+        <section id="fashion">
+            <div class="container-lg">
+                <div class="row mt-5">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-7 flash text-center">
+                        <h2 class="banner-text text-uppercase" >BACK IN FASHION</h2>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            When The Bang Gang first started, they were in fashion - by trend and by attitude. Six misfit DJs; Ajax, Dangerous Dan, Bumpin’ Benny B, Gus Da Hoodrat, Jaime Doom, and Double Nolan; throwing late-night parties in the heart of Kings Cross at Sydney’s Moulin Rouge. No rules, all welcome; fashion kids, skater kids, music nerds, drag queens, off work strippers - united by sound, sweat and sex.For five years straight, every Friday night stretched into forever. It wasn’t just a party, it became a movement. Local legends and future icons cut their teeth in the chaos; Bag Raiders, Cut Copy, Flight Facilities, The Avalanches, Midnight Juggernauts. International guests rolled through; Justice, Tiga, James Murphy, M.I.A., Busy P and more. The Bang Gang toured the world, started a record label, hosted festival stages, and supported Daft Punk on their legendary Pyramid Tour.Sex in the toilets. Sex in the office. Sex in the DJ booth. Sex on the dancefloor. Drugs in pockets. Music in hearts. Chaos in the air. For five wild years, The Bang Gang turned Sydney nightlife into their playground; and now, after all these years; no rules, no sleep, no apologies…
+                            THE BANG GANG IS BACK IN FASHION<br >
+                            Courtesy of Chat GPT 4.0
+                        </p>                           
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img class="img-fluid" src="assets/img/banggang-banner.png" alt="bang gang">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="code code-orange text-end">
+                                emoji-banner { overflow: hidden; white-space: nowrap;<br>
+                                    width: 100%; position: relative; } .emoji-banner span { display: inline-block; will-change:<br>
+                                    000001101000101transform; animation: scroll-now 20s linear infinite; } @keyframes scroll-now { 0% 
+                                    { transform: translateX(100%); } 100% { transform: translateX(-100%); } 11100011011011011011110} will-change: ow { 0% { <br> transform: 
+                                    10100100001111000 @keyframes scroll-now { 0% { transform: translateX(100%); } <br>
+                                    100% { transform: translateX(-100%); } }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6 flash text-center">
+                            <h2 class="banner-text text-uppercase">BANG GANG AT CLUB77</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-12 text-center">
+                            <img class="img-fluid" src="assets/img/banggang-flyer.png" alt="bang gang 77">
+                            <h3 class="mt-5">
+                                <a href="https://ra.co/events/2151974" target="_blank">* BUY TIX HERE *</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 mt-4">
+                            <p class="code code-orange text-end">
+                                .emoji-banner { overflow: hidden; white-space: nowrap;<br>
+                                    width: 100%; position: relative; } .emoji-banner span { display: inline-block; will-change: <br>
+                                    000011101transform; animation: scroll-now 20s linear infinite; } @keyframes scroll-now { 0% <br>
+                                    { transform: translateX(100%); } 100% { transform: translateX(-100%); } 11101110} will-change: ow { 0% { transform: <br>
+                                    107798000 @keyframes scroll-now { 0% { transform: translateX(100%); }
+                                    100% { transform: translateX(-100%); } }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="row">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6 text-left">
+                    <h5 class="mt-4 text-uppercase" style="font-size: 1.0rem;">Sign up to receive spam</h5>
+                    <form id="contact-form">
+                        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+                        <div class="form-group row mt-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="full-name">FULL NAME ::</span>
+                                <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="full-name">
+                            </div>  
+                        </div>
+                        <div class="form-group row mt-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="email">EMAIL ::</span>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email">
+                            </div>  
+                        </div>
+                        <input type="submit" class="btn btn-danger mt-4" value="Submit">
+                    </form>
+                    <div id="success" class="alert alert-success mt-4" style="display: none;">
+                        <strong>Success!</strong> message sent.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <p class="code code-green text-end">
+                        Csaaaaddf djjee<br>
+                        emoji-banner {000000000011111111 overflow: hidden; white-space: .emoji-banner { overflow: hidden; white-space:
+                            nowrap; width: 100%; position: relative; } .emoji-banner span00000111111{ display: inline-<br>
+                                block;0111111111<br>
+                                100% { transform: translateX(-100%); } }
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mb-4">
+        <div class="container-fluid">               
+            <div class="row">
+                <div class="col-sm-5">
+                    <ul class="list-group list-group-flush offer pl-5 pr-5">
+                        <li class="list-group-item">
+                            <a href="#page-top">Home</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#book" >Diary of a naughtie kid</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/music" target="_blank">Music</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/calender" target="_blank">Calender</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="text-white" target="_blank" href="https://www.1800-psycho.com/" style="font-size: 2.6rem">1800-PSYCHO</a>
+                        </li>                                                                                                                       
+                    </ul>
+                </div>                                                                                                                                                              
+                <div class="col-sm-7 align-self-end ">
+                    <p class="text-end pr-5"> 
+                        <a href="https://www.instagram.com/dangerousdanman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2xl text-white" style="font-size: 4em"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>                                                                                                                                                      
+        </div>
+    </footer>
+        <script src="assets/lib/jquery/jquery-3.7.1.min.js"></script>
+        <script src="assets/lib/dflip/js/dflip.min.js"></script>
+        <script>
+            var option_flipbook = {showDownloadControl:false, showPrintControl:false};
+            
+            function flashElement(element, interval) {
+            setInterval(function() {
+                $(element).fadeOut(200).fadeIn(200); // Fades out and then in
+            }, interval);                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+            }
+            flashElement(".flash", 600);
+            
+            window.onload = function() {
+                flashElement(".flash", 600);
+            
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_u6vb516', 'template_a2g5q6h', this)
+                        .then(() => {
+                            $('#contact-form').hide();
+                            $('#success').show();
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+    </body>
+</html>
