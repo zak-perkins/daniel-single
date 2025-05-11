@@ -23,8 +23,10 @@ body {
     background-color: #1e4bf5;
 }
 
-header {
-    min-height: 500px;
+#banner {
+  height: 228px;
+  background: #1e4bf5 url(../img/banner.gif) repeat 0 center;
+  margin: 0 auto;
 }
 
 h2 {
@@ -39,6 +41,7 @@ h2 {
 }
 
 h5 {
+  font-family: 'Monaco Regular', Courier, monospace;
   color: #fff;
   letter-spacing: normal;
   font-weight: 400;
@@ -47,29 +50,42 @@ h5 {
 a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.7rem;receive
+  font-size: 0.9rem;
   font-family: 'Monaco Regular', Courier, monospace;
   font-weight: 600;
 }
 
 
 p {
-  line-height: 0.7rem;
+  line-height: 1rem;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
+}
+
+ul {
+  font-family: 'Monaco Regular', Courier, monospace;
 }
 
 ul > li.list-group-item {
   background-color: transparent;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  border: none
+  border: none;
+  padding: 2px;
 }
 
+a.tickets {
+  font-family: 'Monaco Regular', Courier, monospace;
+  color: #88fa4e;
+  font-size: 1.1rem;
+}
+
+
 .input-group-text, .form-control {
+  font-family: 'Monaco Regular', Courier, monospace;
   font-size: 0.7rem;
   letter-spacing: normal;
   font-weight: 200;
@@ -82,10 +98,6 @@ ul > li.list-group-item {
 
 .form-control {
   border-bottom: 1px solid #fff;
-}
-
-header .img-fluid  {s
-    margin-top: -5px;
 }
 
 .code {

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="D A N I E L S I N G L E  D O T  C O M">
-        <meta name="author" content="Isaac Perkins">
+        <meta name="author" content="Zak Perkins">
         <title>d a n i e l  s i n g l e</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link href="assets/lib/fontawesome/css/all.min.css" rel="stylesheet">
@@ -36,12 +36,13 @@
                 document.body.appendChild(heart);
                 setTimeout(() => heart.remove(), 4000);
             };
+            
         </script>
     </head>
     <body id="page-top">
         <header>
-            <div class="container-fluid p-0">
-                <img src="assets/img/banner.gif" alt="banner" class="img-fluid">
+            <div id="banner">
+                <!--<img src="assets/img/banner.gif" alt="banner" class="img-fluid">-->
             </div>
             <script>
                 setInterval(spawnHeart, 400);
@@ -58,7 +59,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-6 flash">
                         <h2 class="banner-text text-uppercase" >Diary of a naughtie kid</h2>
@@ -194,7 +195,7 @@
                         <div class="col-sm-12 text-center">
                             <img class="img-fluid" src="assets/img/banggang-flyer.png" alt="bang gang 77">
                             <h3 class="mt-5">
-                                <a href="https://ra.co/events/2151974" target="_blank">* BUY TIX HERE *</a>
+                                <a class="tickets" href="https://ra.co/events/2151974" target="_blank">* BUY TIX HERE *</a>
                             </h3>
                         </div>
                     </div>
@@ -232,9 +233,9 @@
                                 <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email">
                             </div>  
                         </div>
-                        <input type="submit" class="btn btn-danger mt-4" value="Submit">
+                        <input type="submit" class="btn btn-danger mt-4 text-uppercase" value="Submit">
                     </form>
-                    <div id="success" class="alert alert-success mt-4" style="display: none;">
+                    <div id="success" class="alert alert-success mt-4 text-uppercase" style="display: none;">
                         <strong>Success!</strong> message sent.
                 </div>
             </div>
@@ -260,7 +261,7 @@
                             <a href="#page-top">Home</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#book" >Diary of a naughtie kid</a>
+                            <a href="#book" class="text-uppercase">Diary of a naughtie kid</a>
                         </li>
                         <li class="list-group-item">
                             <a href="/music" target="_blank">Music</a>
@@ -286,15 +287,19 @@
         <script src="assets/lib/jquery/jquery-3.7.1.min.js"></script>
         <script src="assets/lib/dflip/js/dflip.min.js"></script>
         <script>
-            var option_flipbook = {showDownloadControl:false, showPrintControl:false};
+            var option_flipbook = {showDownloadControl:false, showPrintControl:false, pageMode: 2};
             
             function flashElement(element, interval) {
-            setInterval(function() {
-                $(element).fadeOut(200).fadeIn(200); // Fades out and then in
-            }, interval);                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                setInterval(function() {
+                    $(element).fadeOut(200).fadeIn(200); // Fades out and then in
+                }, interval);                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
             }
             flashElement(".flash", 600);
             
+            (function slide(){
+                $('#banner').animate({backgroundPosition : '-=2px'}, 20, 'linear', slide);
+            })();
+
             window.onload = function() {
                 flashElement(".flash", 600);
             
